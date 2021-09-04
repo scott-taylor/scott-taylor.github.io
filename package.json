@@ -1,0 +1,38 @@
+{
+  "name": "scott-taylor.github.io",
+  "version": "0.0.1",
+  "description": "Personal GitHub Page",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "clean": "rimraf docs",
+    "dev": "npm-run-all -p dev:*",
+    "dev:pug": "pug --pretty --out docs --watch src",
+    "dev:sass": "sass --no-source-map --watch src:docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scott-taylor/scott-taylor.github.io.git"
+  },
+  "keywords": [
+    "pug",
+    "sass",
+    "static",
+    "website"
+  ],
+  "author": "Scott Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scott-taylor/scott-taylor.github.io/issues"
+  },
+  "homepage": "https://github.com/scott-taylor/scott-taylor.github.io#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^3.0.2",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {}
+}
